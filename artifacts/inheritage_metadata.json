@@ -35,6 +35,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "autoDistribute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "distrubiteInheritage",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -43,6 +50,26 @@
 			{
 				"inputs": [],
 				"name": "getTotalPercentage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "keepAlive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastActiveTime",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -158,11 +185,11 @@
 	},
 	"sources": {
 		"inheritage.sol": {
-			"keccak256": "0xfe089b51a8a2d28fef0dfff66b0d38014647fb0741da87db45c9857c1dccf6a4",
+			"keccak256": "0x136e8e06d0f10b45051fbc3da176d08711da5c2d8a7cf80f27105d4cb9d2ec7a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9caa6b8ca3a47eac6b30abc3e45b62e0808b4d951c7a65f31e9bf59fcbf14cc9",
-				"dweb:/ipfs/QmdvgpiEmiEm4SQg6Stn7Z4ZqUAvkVEk5HZSEc13YAQeaQ"
+				"bzz-raw://b355b6653f01982e4593d6fa396ae28615fa0a5e42cf5410d241a2f6f051a3cb",
+				"dweb:/ipfs/QmRuB1sEoStfYVEbVsYZcDhXMBWbe9oJD5xRGYqEJxkUf3"
 			]
 		}
 	},

@@ -4,14 +4,16 @@ pragma solidity 0.8.26;
 contract inheritage {
     address owner;
     Successor[] successor;
+    uint256 public lastActiveTime;
 
     constructor(){
         owner = msg.sender;
+        lastActiveTime = block.timestamp;
     }
 
     //1.put money in to pool
     function putmoney() payable public {
-
+        require(block.timestamp < lastActiveTime + 5 minutes, "Contract is inactive for more than a 5 minute.");
     }
 
     //2.view pool balance
@@ -79,8 +81,11 @@ contract inheritage {
         return successor;
     }
 
+    //5.distribute inheritage
     function distrubiteInheritage() public {
         require(address(this).balance > 0, "Insufficient balance in the contract.");
+        require(block.timestamp < lastActiveTime + 5 minutes, "Contract is inactive for more than a 5 minute.");
+
         uint totalBalance = address(this).balance;
 
         for(uint i = 0; i < successor.length; i++){
@@ -93,6 +98,7 @@ contract inheritage {
         walletAddress.transfer(amount);
     }
 
+    // Calculate total percentage of all successors
     function getTotalPercentage() public view returns(uint) {
         uint totalPercentage = 0;
         for(uint i = 0; i < successor.length; i++){
@@ -101,6 +107,14 @@ contract inheritage {
         return totalPercentage;
     }
 
-    //6.keep alive
-    
+    //6. Keep alive
+    function keepAlive() public {
+        require(msg.sender == owner, "Only the owner can call this function.");
+        lastActiveTime = block.timestamp; // อัพเดตเวลาที่ใช้งานล่าสุดเป็นเวลาปัจจุบัน
+    }
+
+    function autoDistribute() public {
+        require(block.timestamp >= lastActiveTime + 5 minutes, "Contract is still active.");
+        distrubiteInheritage();
+    }
 }
