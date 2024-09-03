@@ -1,5 +1,5 @@
 {
-	"id": "ac246ff4908f78be15c523f4ac1be3fa",
+	"id": "69dac066a2a429b3c3fc0bc52f97770e",
 	"_format": "hh-sol-build-info-1",
 	"solcVersion": "0.8.26",
 	"solcLongVersion": "0.8.26+commit.8a97fa7a",
@@ -7,7 +7,7 @@
 		"language": "Solidity",
 		"sources": {
 			"heritage.sol": {
-				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.26;\r\n\r\ncontract heritage {\r\n    address owner;\r\n    constructor(){\r\n        owner = msg.sender;\r\n    }\r\n    \r\n}"
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.26;\r\n\r\ncontract heritage {\r\n    address owner;\r\n    constructor(){\r\n        owner = msg.sender;\r\n    }\r\n\r\n    \r\n}"
 			}
 		},
 		"settings": {
@@ -55,7 +55,7 @@
 						"version": 1
 					},
 					"evm": {
-						"assembly": "    /* \"heritage.sol\":60:164  contract heritage {... */\n  mstore(0x40, 0x80)\n    /* \"heritage.sol\":105:155  constructor(){... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n    /* \"heritage.sol\":137:147  msg.sender */\n  caller\n    /* \"heritage.sol\":129:134  owner */\n  0x00\n  dup1\n    /* \"heritage.sol\":129:147  owner = msg.sender */\n  0x0100\n  exp\n  dup2\n  sload\n  dup2\n  0xffffffffffffffffffffffffffffffffffffffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0xffffffffffffffffffffffffffffffffffffffff\n  and\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"heritage.sol\":60:164  contract heritage {... */\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"heritage.sol\":60:164  contract heritage {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220fa229fe7746cf6232a71bda934a5f2033d3401f0bd4fad2fd0c84496d90b101c64736f6c634300081a0033\n}\n",
+						"assembly": "    /* \"heritage.sol\":60:166  contract heritage {... */\n  mstore(0x40, 0x80)\n    /* \"heritage.sol\":105:155  constructor(){... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n    /* \"heritage.sol\":137:147  msg.sender */\n  caller\n    /* \"heritage.sol\":129:134  owner */\n  0x00\n  dup1\n    /* \"heritage.sol\":129:147  owner = msg.sender */\n  0x0100\n  exp\n  dup2\n  sload\n  dup2\n  0xffffffffffffffffffffffffffffffffffffffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0xffffffffffffffffffffffffffffffffffffffff\n  and\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"heritage.sol\":60:166  contract heritage {... */\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"heritage.sol\":60:166  contract heritage {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220a948706b0baaa047568bb6398634217b37f0371cd9bf6de78554113a54c1af7f64736f6c634300081a0033\n}\n",
 						"bytecode": {
 							"functionDebugData": {
 								"@_12": {
@@ -67,18 +67,18 @@
 							},
 							"generatedSources": [],
 							"linkReferences": {},
-							"object": "6080604052348015600e575f80fd5b50335f806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603e8060595f395ff3fe60806040525f80fdfea2646970667358221220fa229fe7746cf6232a71bda934a5f2033d3401f0bd4fad2fd0c84496d90b101c64736f6c634300081a0033",
-							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 DUP1 REVERT JUMPDEST POP CALLER PUSH0 DUP1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH1 0x3E DUP1 PUSH1 0x59 PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 STATICCALL 0x22 SWAP16 0xE7 PUSH21 0x6CF6232A71BDA934A5F2033D3401F0BD4FAD2FD0C8 PREVRANDAO SWAP7 0xD9 SIGNEXTEND LT SHR PUSH5 0x736F6C6343 STOP ADDMOD BYTE STOP CALLER ",
-							"sourceMap": "60:104:0:-:0;;;105:50;;;;;;;;;;137:10;129:5;;:18;;;;;;;;;;;;;;;;;;60:104;;;;;;"
+							"object": "6080604052348015600e575f80fd5b50335f806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603e8060595f395ff3fe60806040525f80fdfea2646970667358221220a948706b0baaa047568bb6398634217b37f0371cd9bf6de78554113a54c1af7f64736f6c634300081a0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 DUP1 REVERT JUMPDEST POP CALLER PUSH0 DUP1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH1 0x3E DUP1 PUSH1 0x59 PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xA9 BASEFEE PUSH17 0x6B0BAAA047568BB6398634217B37F0371C 0xD9 0xBF PUSH14 0xE78554113A54C1AF7F64736F6C63 NUMBER STOP ADDMOD BYTE STOP CALLER ",
+							"sourceMap": "60:106:0:-:0;;;105:50;;;;;;;;;;137:10;129:5;;:18;;;;;;;;;;;;;;;;;;60:106;;;;;;"
 						},
 						"deployedBytecode": {
 							"functionDebugData": {},
 							"generatedSources": [],
 							"immutableReferences": {},
 							"linkReferences": {},
-							"object": "60806040525f80fdfea2646970667358221220fa229fe7746cf6232a71bda934a5f2033d3401f0bd4fad2fd0c84496d90b101c64736f6c634300081a0033",
-							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 STATICCALL 0x22 SWAP16 0xE7 PUSH21 0x6CF6232A71BDA934A5F2033D3401F0BD4FAD2FD0C8 PREVRANDAO SWAP7 0xD9 SIGNEXTEND LT SHR PUSH5 0x736F6C6343 STOP ADDMOD BYTE STOP CALLER ",
-							"sourceMap": "60:104:0:-:0;;;;;"
+							"object": "60806040525f80fdfea2646970667358221220a948706b0baaa047568bb6398634217b37f0371cd9bf6de78554113a54c1af7f64736f6c634300081a0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xA9 BASEFEE PUSH17 0x6B0BAAA047568BB6398634217B37F0371C 0xD9 0xBF PUSH14 0xE78554113A54C1AF7F64736F6C63 NUMBER STOP ADDMOD BYTE STOP CALLER ",
+							"sourceMap": "60:106:0:-:0;;;;;"
 						},
 						"gasEstimates": {
 							"creation": {
@@ -91,21 +91,21 @@
 							".code": [
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "PUSH",
 									"source": 0,
 									"value": "80"
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "PUSH",
 									"source": 0,
 									"value": "40"
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "MSTORE",
 									"source": 0
 								},
@@ -310,91 +310,91 @@
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "PUSH #[$]",
 									"source": 0,
 									"value": "0000000000000000000000000000000000000000000000000000000000000000"
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "DUP1",
 									"source": 0
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "PUSH [$]",
 									"source": 0,
 									"value": "0000000000000000000000000000000000000000000000000000000000000000"
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "PUSH",
 									"source": 0,
 									"value": "0"
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "CODECOPY",
 									"source": 0
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "PUSH",
 									"source": 0,
 									"value": "0"
 								},
 								{
 									"begin": 60,
-									"end": 164,
+									"end": 166,
 									"name": "RETURN",
 									"source": 0
 								}
 							],
 							".data": {
 								"0": {
-									".auxdata": "a2646970667358221220fa229fe7746cf6232a71bda934a5f2033d3401f0bd4fad2fd0c84496d90b101c64736f6c634300081a0033",
+									".auxdata": "a2646970667358221220a948706b0baaa047568bb6398634217b37f0371cd9bf6de78554113a54c1af7f64736f6c634300081a0033",
 									".code": [
 										{
 											"begin": 60,
-											"end": 164,
+											"end": 166,
 											"name": "PUSH",
 											"source": 0,
 											"value": "80"
 										},
 										{
 											"begin": 60,
-											"end": 164,
+											"end": 166,
 											"name": "PUSH",
 											"source": 0,
 											"value": "40"
 										},
 										{
 											"begin": 60,
-											"end": 164,
+											"end": 166,
 											"name": "MSTORE",
 											"source": 0
 										},
 										{
 											"begin": 60,
-											"end": 164,
+											"end": 166,
 											"name": "PUSH",
 											"source": 0,
 											"value": "0"
 										},
 										{
 											"begin": 60,
-											"end": 164,
+											"end": 166,
 											"name": "DUP1",
 											"source": 0
 										},
 										{
 											"begin": 60,
-											"end": 164,
+											"end": 166,
 											"name": "REVERT",
 											"source": 0
 										}
@@ -408,7 +408,7 @@
 						},
 						"methodIdentifiers": {}
 					},
-					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"heritage.sol\":\"heritage\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"heritage.sol\":{\"keccak256\":\"0x58460266aadb5ca4db9519f02df6f23d3cf0047cbb41a6face1f6a873c9688f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32d7561a797e346f0911bc27402a2d6162a8a5a9d7abe999269d787c2b4ad16\",\"dweb:/ipfs/QmX5rGBsMyGtpb2V3j8Xck7kQufjy1zaxfFC9kCPqbbvGp\"]}},\"version\":1}",
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"heritage.sol\":\"heritage\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"heritage.sol\":{\"keccak256\":\"0xa60f18d2b6e9456b292bd576aa267b06c4284747b1100db6168f54989036c654\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://992a218ee448946b2fc4e4797af3bba8c057563b706ed78acdf153bed978c181\",\"dweb:/ipfs/QmPvn1mK7k3JpyxMhdXnHKRe3iHfe8vfWBXHRCdVUUhhaK\"]}},\"version\":1}",
 					"storageLayout": {
 						"storage": [
 							{
@@ -595,12 +595,12 @@
 								}
 							],
 							"scope": 14,
-							"src": "60:104:0",
+							"src": "60:106:0",
 							"usedErrors": [],
 							"usedEvents": []
 						}
 					],
-					"src": "33:131:0"
+					"src": "33:133:0"
 				},
 				"id": 0
 			}

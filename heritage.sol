@@ -6,5 +6,6 @@ contract heritage {
     constructor(){
         owner = msg.sender;
     }
+
     
 }
