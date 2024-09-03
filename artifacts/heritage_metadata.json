@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"heritage.sol": "heritage"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"heritage.sol": {
+			"keccak256": "0x58460266aadb5ca4db9519f02df6f23d3cf0047cbb41a6face1f6a873c9688f5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c32d7561a797e346f0911bc27402a2d6162a8a5a9d7abe999269d787c2b4ad16",
+				"dweb:/ipfs/QmX5rGBsMyGtpb2V3j8Xck7kQufjy1zaxfFC9kCPqbbvGp"
+			]
+		}
+	},
+	"version": 1
+}
