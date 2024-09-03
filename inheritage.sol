@@ -23,20 +23,39 @@ contract inheritage {
     struct Successor{
         address payable walletAddress;
         string name;
+        uint percentage;
     }
 
-    function addSuccessor(address payable walletAddress,string memory name) public {
-        require(msg.sender == owner, "Only the onwer can call this function.");
+    function addSuccessor(address payable walletAddress, string memory name, uint percentage) public {
+        require(msg.sender == owner, "Only the owner can call this function.");
+        require(percentage > 0 && percentage <= 100, "Percentage must be between 1 and 100.");
+        require(getTotalPercentage() + percentage <= 100, "Total percentage exceeds 100%.");
+
         bool successorExist = false;
-        if(successor.length >=1){
-            for(uint i=0; i<successor.length; i++){
-                if(successor[i].walletAddress == walletAddress){
-                    successorExist = true;
-                }
+        for(uint i = 0; i < successor.length; i++){
+            if(successor[i].walletAddress == walletAddress){
+                successorExist = true;
+                break;
             }
         }
-        if(successorExist==false){
-            successor.push(Successor(walletAddress,name));        
+
+        if(!successorExist){
+            successor.push(Successor(walletAddress, name, percentage));        
+        }
+    }
+
+    function removeWaitress(address payable walletAddress) public{
+        if(successor.length>=1){
+            for(uint i=0; i<successor.length; i++){
+                if(successor[i].walletAddress==walletAddress){
+                    for(uint j=i; j<successor.length-1; j++){
+                        successor[j]=successor[j+1];
+                    }
+                    successor.pop();
+                    break;
+                }
+                
+            }
         }
     }
 
@@ -60,14 +79,13 @@ contract inheritage {
         return successor;
     }
 
-    //5.distribute inheritage
     function distrubiteInheritage() public {
         require(address(this).balance > 0, "Insufficient balance in the contract.");
-        if(successor.length>=1){
-            uint amount = address(this).balance / successor.length;
-            for(uint i=0; i<successor.length; i++){
-                transfer(successor[i].walletAddress,amount);
-            }
+        uint totalBalance = address(this).balance;
+
+        for(uint i = 0; i < successor.length; i++){
+            uint amount = (totalBalance * successor[i].percentage) / 100;
+            transfer(successor[i].walletAddress, amount);
         }
     }
 
@@ -75,5 +93,14 @@ contract inheritage {
         walletAddress.transfer(amount);
     }
 
+    function getTotalPercentage() public view returns(uint) {
+        uint totalPercentage = 0;
+        for(uint i = 0; i < successor.length; i++){
+            totalPercentage += successor[i].percentage;
+        }
+        return totalPercentage;
+    }
+
     //6.keep alive
+    
 }

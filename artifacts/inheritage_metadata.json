@@ -21,6 +21,11 @@
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "percentage",
+						"type": "uint256"
 					}
 				],
 				"name": "addSuccessor",
@@ -33,6 +38,19 @@
 				"name": "distrubiteInheritage",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTotalPercentage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -56,6 +74,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "removeWaitress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "viewSuccessor",
 				"outputs": [
@@ -70,6 +101,11 @@
 								"internalType": "string",
 								"name": "name",
 								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "percentage",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct inheritage.Successor[]",
@@ -122,11 +158,11 @@
 	},
 	"sources": {
 		"inheritage.sol": {
-			"keccak256": "0x44e90b0538bc5b3ea1bdf55017d0d0e086eb83b851352c2181c76f364ea4e674",
+			"keccak256": "0xfe089b51a8a2d28fef0dfff66b0d38014647fb0741da87db45c9857c1dccf6a4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3344b4ffb7f449b29b6f0ce3eb800b71759ec359bca6e809b7f240decc7117df",
-				"dweb:/ipfs/QmWNpfCjHDz5hZU5xDbZpa5iwq2Q5ranSXwufCPchSchdf"
+				"bzz-raw://9caa6b8ca3a47eac6b30abc3e45b62e0808b4d951c7a65f31e9bf59fcbf14cc9",
+				"dweb:/ipfs/QmdvgpiEmiEm4SQg6Stn7Z4ZqUAvkVEk5HZSEc13YAQeaQ"
 			]
 		}
 	},
