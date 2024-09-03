@@ -39,11 +39,11 @@
 	},
 	"sources": {
 		"heritage.sol": {
-			"keccak256": "0xa60f18d2b6e9456b292bd576aa267b06c4284747b1100db6168f54989036c654",
+			"keccak256": "0x30e01873ef76618e8556ddfcb3c66ad9c4e42cf670633027a69421b7ddd9b666",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://992a218ee448946b2fc4e4797af3bba8c057563b706ed78acdf153bed978c181",
-				"dweb:/ipfs/QmPvn1mK7k3JpyxMhdXnHKRe3iHfe8vfWBXHRCdVUUhhaK"
+				"bzz-raw://0d428ddb0b520f7ca8c969270b751c762d8eca8eaca6deffe5df56dcf34ed2ed",
+				"dweb:/ipfs/QmZ8n6zxLf5egPp9SiQahX9WjW4bcSE36xJ2affafktio7"
 			]
 		}
 	},
