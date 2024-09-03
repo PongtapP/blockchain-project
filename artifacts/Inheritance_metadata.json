@@ -35,27 +35,21 @@
 			},
 			{
 				"inputs": [],
-				"name": "distributeInheritage",
+				"name": "distributeInheritance",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getTotalPercentage",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "keepAlive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "putmoney",
+				"name": "putMoney",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -75,7 +69,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "viewSuccessor",
+				"name": "viewBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewSuccessors",
 				"outputs": [
 					{
 						"components": [
@@ -95,22 +102,9 @@
 								"type": "uint256"
 							}
 						],
-						"internalType": "struct inheritage.Successor[]",
+						"internalType": "struct Inheritance.Successor[]",
 						"name": "",
 						"type": "tuple[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "viewbalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -130,7 +124,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"inheritage.sol": "inheritage"
+			"inheritage.sol": "Inheritance"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -145,11 +139,11 @@
 	},
 	"sources": {
 		"inheritage.sol": {
-			"keccak256": "0x78634fb68b8e5a9a4b224af1444d1a407abace0488d8a698748b5ab1eeb7ed67",
+			"keccak256": "0x2d68c368f8e78b164128330343549d0668bb8f002cf1c85823b48de7121b9096",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://49aafb1c3ec0be084636d8cfee5f391ba6813d976084d26056751faa94418ccc",
-				"dweb:/ipfs/QmPqD5vox4mZ6J33oY4RhvDeCBXL5nqurNMfue6HndRJ4q"
+				"bzz-raw://763480ce758c7a91a6c7e14debe14de865262d696428517ba355468552f0f900",
+				"dweb:/ipfs/QmctoxpPHkDgn63f9rZHw2VM6KQx5rkkYEPeqKxXUtmske"
 			]
 		}
 	},
