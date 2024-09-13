@@ -55,6 +55,20 @@
 			},
 			{
 				"inputs": [],
+				"name": "keepAlive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "noAliveDistribute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "putmoney",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -145,11 +159,11 @@
 	},
 	"sources": {
 		"inheritage.sol": {
-			"keccak256": "0x78634fb68b8e5a9a4b224af1444d1a407abace0488d8a698748b5ab1eeb7ed67",
+			"keccak256": "0x423e351415dc1b79c527cecbb9e4f2899feb33542504f924d670e69ba626981d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://49aafb1c3ec0be084636d8cfee5f391ba6813d976084d26056751faa94418ccc",
-				"dweb:/ipfs/QmPqD5vox4mZ6J33oY4RhvDeCBXL5nqurNMfue6HndRJ4q"
+				"bzz-raw://6cd36e2aa470fb1c6e1f3b234da68f49ac6a03e90a349b1180a5acf5bd30fb7f",
+				"dweb:/ipfs/QmNRG7DtkVCNy294jZwMBiyTnFwN6Bg5GuZ1JWHDK1vUQH"
 			]
 		}
 	},
