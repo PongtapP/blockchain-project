@@ -4,12 +4,12 @@ pragma solidity 0.8.26;
 contract inheritage {
     address owner;
     Successor[] successor;
-    uint lastAlive; // เก็บเวลาที่เจ้าของกด keepAlive
+    uint lastAlive;
     uint constant aliveInterval = 365 days; // 1 ปี
 
     constructor(){
         owner = msg.sender;
-        lastAlive = block.timestamp; // ตั้งค่าเริ่มต้นเมื่อสร้างสัญญา
+        lastAlive = block.timestamp;
     }
 
     //1. Put money into the pool
@@ -81,7 +81,7 @@ contract inheritage {
         walletAddress.transfer(amount);
     }
 
-    function getTotalPercentage() public view returns(uint) {
+    function getTotalPercentage() internal view returns(uint) {
         uint totalPercentage = 0;
         for(uint i = 0; i < successor.length; i++){
             totalPercentage += successor[i].percentage;
@@ -92,7 +92,7 @@ contract inheritage {
     //6.keep alive
     function keepAlive() public {
         require(msg.sender == owner, "Only the owner can call this function.");
-        lastAlive = block.timestamp; // อัปเดตเวลาที่กด keepAlive
+        lastAlive = block.timestamp;
     }
 
     // No Alive Distribute
