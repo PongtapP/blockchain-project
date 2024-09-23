@@ -146,11 +146,11 @@
 	},
 	"sources": {
 		"inheritage.sol": {
-			"keccak256": "0x9e661ea6a625f2d7e55fe11f85e90e4afcd64245469bb9fd214e9b04e583dafe",
+			"keccak256": "0x1547b3b89ce9ae7d1d782f9fe991e341e0122fe19d6eb9bf3eb1cff430f34e9f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://da715bd00d1fe08177f53e4c13b359f136dd274d764ebb360364590e7e5523ee",
-				"dweb:/ipfs/QmcTAKNQ3mxi2u3SoQCXwzS9JzypouT2W86vUQxVQFyQLs"
+				"bzz-raw://c33f9cd36814a1132e4f865d62ce646e824ccd68f3152aae3554295202bff1b0",
+				"dweb:/ipfs/QmSEqFDcR6bHfW2GDRf23q6ocfbxq8yfbBp6bbdc4U42qR"
 			]
 		}
 	},

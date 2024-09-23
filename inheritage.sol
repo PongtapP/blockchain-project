@@ -5,7 +5,7 @@ contract inheritage {
     address owner;
     Successor[] successor;
     uint lastAlive;
-    uint constant aliveInterval = 365 days; // 1 ปี
+    uint constant aliveInterval = 365 days; //  1 minutes; 30 seconds;
 
     constructor(){
         owner = msg.sender;
@@ -14,7 +14,6 @@ contract inheritage {
 
     //1. Put money into the pool
     function putmoney() payable public {
-
     }
 
     //2. View pool balance
@@ -49,6 +48,7 @@ contract inheritage {
 
     function removeSuccessor(address payable walletAddress) public{
         require(msg.sender == owner, "Only the owner can call this function.");
+
         for(uint i = 0; i < successor.length; i++){
             if(successor[i].walletAddress == walletAddress){
                 for(uint j = i; j < successor.length - 1; j++){
@@ -69,6 +69,7 @@ contract inheritage {
     function distributeInheritage() public {
         require(msg.sender == owner, "Only the owner can call this function.");
         require(address(this).balance > 0, "Insufficient balance in the contract.");
+
         uint totalBalance = address(this).balance;
 
         for(uint i = 0; i < successor.length; i++){
@@ -92,6 +93,7 @@ contract inheritage {
     //6.keep alive
     function keepAlive() public {
         require(msg.sender == owner, "Only the owner can call this function.");
+
         lastAlive = block.timestamp;
     }
 
